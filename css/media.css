@@ -1,0 +1,197 @@
+@media screen and (max-width: 1500px){
+
+}
+
+
+@media screen and (max-width: 1200px){
+    .header__inner{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .intro__all_img{
+        display: none;
+    }
+    .intro__all{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+    }
+    .ftgl__a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .services__bloks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .problems__in{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .portfolio__all{
+        display: flex;
+        justify-content: center;
+    }
+    .prople__bloks{
+        display: flex;
+        justify-content: center;
+    }
+    .clients__all{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .border__in{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 998px){
+    .services__bloks{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .problems{
+        height: 897px;
+    }
+    .problems__in{
+        padding-top: 30px;
+    }
+    .prople__blok1__p_img1{
+        display: none;
+    }
+    .prople__blok1__img2{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    :root{
+        --white: #f9f9f9;
+        --black: #36383F;
+        --gray: #85888C;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        box-shadow: 1px 1px 5px 0px var(--gray);
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding-bottom: 0;
+        padding-top: 15px;
+    }
+    .header__inner{
+        flex-direction: column;
+        display: flex;
+        align-items: start;
+        flex-direction: row;
+    }
+    .header__inner__home_nav{
+        width: 100%;
+        height: 100%;
+        background-color: var(--black);
+        overflow: hidden;
+        max-height: 0;
+        
+        transition: .5s ease-out;
+    }
+    .header__inner__home_nav_ul{
+        list-style: none;
+        flex-direction: column;
+    }
+    .header__inner__home_nav_ul a{
+        display: block;
+        padding: 30px;
+        color: var(--white);
+    }
+    .header__inner__home_nav_ul a:hover{
+        background-color: var(--gray);
+    }
+    .header__inner__logo{
+        display: inline-block;
+        color: var(--white);
+        margin-left: 10px;
+    }
+    .header__inner__home_a{
+        display: none;
+    }
+
+    .hamb{
+        cursor: pointer;
+        float: right;
+        padding: 40px 20px;
+    }
+    .hamb-line {
+        background: var(--white);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+     
+    }
+    .hamb-line::before,
+    .hamb-line::after{
+        background: var(--white);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    .hamb-line::before{
+        top: 5px;
+    }
+    .hamb-line::after{
+        top: -5px;
+    }
+    
+    .side-menu {
+        display: none;
+    }
+    .side-menu:checked ~ nav{
+        max-height: 100%;
+    }
+    .side-menu:checked ~ .hamb .hamb-line {
+        background: transparent;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top:0;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .ftgl__a{
+        display: flex;
+        gap: 20px;
+        padding-top: 39px;
+    }
+    .prople__bloks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .clients__all{
+        display: flex;
+        gap: 30px;
+    }
+    .border__in_follow_p{
+        margin-top: 40px;
+    }
+}
